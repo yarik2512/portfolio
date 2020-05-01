@@ -13,6 +13,8 @@ body {
     flex-wrap: wrap;
 }
 
+
+
 .mini-container {
     max-width: 540px;
     margin: auto;
@@ -51,6 +53,26 @@ body {
     background: #EEEFF1;
     padding-top: 60px;
     padding-bottom: 145px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: calc((100% - 1150px)/2);
+    padding-right: calc((100% - 1150px)/2);
+    width: 1150px;
+    height: 100px;
+    background: #EEEFF1;
+    z-index: 1000;
 }
 
 .logo {
@@ -315,6 +337,12 @@ body {
         max-width: 900px;
     }
 
+    .fixed {
+        padding-left: calc((100% - 900px)/2);
+        padding-right: calc((100% - 900px)/2);
+        width: 900px;
+    }
+
     .photo,
     .skills-info {
         width: 100%;
@@ -337,6 +365,13 @@ body {
     .container {
         max-width: 700px;
         position: relative;
+    }
+    
+    .fixed {
+        padding-left: calc((100% - 700px)/2);
+        padding-right: calc((100% - 700px)/2);
+        width: 700px;
+        height: 60px;
     }
 
     .header-info-h1 {
@@ -369,12 +404,11 @@ body {
         align-items: center;
         justify-content: center;
         padding: 2%;
-        width: 96%;
+        width: calc(700px - 4%);
         opacity: 0;
         transform: scale(0);
         transform-origin: right top;
         position: absolute;
-        right: 0;
         top: 55px;
         background: #34547A;
         transition: 1s;
@@ -447,6 +481,12 @@ body {
         max-width: 610px;
     }
 
+    .fixed {
+        padding-left: calc((100% - 610px)/2);
+        padding-right: calc((100% - 610px)/2);
+        width: 610px;
+    }
+
     .header-info-h1 {
         font-size: 36px;
         margin-bottom: 20px;
@@ -465,6 +505,10 @@ body {
         padding-bottom: 50px;
     }
 
+    .menu {
+        width: calc(610px - 4%);
+    }
+
     .works-collage {
         padding-top: 15px;
     }
@@ -478,6 +522,16 @@ body {
 @media (max-width: 660px) {
     .container {
         max-width: 415px;
+    }
+
+    .fixed {
+        padding-left: calc((100% - 415px)/2);
+        padding-right: calc((100% - 415px)/2);
+        width: 415px;
+    }
+
+    .menu {
+        width: calc(415px - 4%);
     }
 
     .header-container {
@@ -539,6 +593,16 @@ body {
         max-width: 350px;
     }
 
+    .fixed {
+        padding-left: calc((100% - 350px)/2);
+        padding-right: calc((100% - 350px)/2);
+        width: 350px;
+    }
+
+    .menu {
+        width: calc(350px - 4%);
+    }
+
     .about,
     .projects,
     .skills,
@@ -578,6 +642,16 @@ body {
 @media (max-width: 320px) {
     .container {
         max-width: 280px;
+    }
+
+    .fixed {
+        padding-left: calc((100% - 280px)/2);
+        padding-right: calc((100% - 280px)/2);
+        width: 280px;
+    }
+
+    .menu {
+        width: calc(280px - 4%);
     }
 
     .soc-networks {
